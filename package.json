@@ -2,7 +2,7 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://artem-sedliar.github.io/My-project-donut/",
+  "homepage": "https://artem-sedliar.github.io/My-project-donut",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /My-project-donut/"
