@@ -1,0 +1,120 @@
+.bg-top {
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 320px) {
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../images/contact/plate-mob-1x.png);
+    background-repeat: no-repeat;
+    background-size: 113px 99px;
+    background-position: bottom 0px left calc(50% + 129px);
+
+    @media screen and (min-width: 320px),
+    (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url(../images/contact/plate-mob-2x.png);
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-size: 113px 99px;
+      background-position: bottom 0px left calc(50% + 129px);
+    }
+
+    @media screen and (min-width: 320px) {
+      margin-left: auto;
+      margin-right: auto;
+      background-image: url(../images/contact/plate-mob-1x.webp);
+      background-repeat: no-repeat;
+      background-size: 113px 99px;
+      background-position: bottom 0px left calc(50% + 129px);
+    }
+
+    @media screen and (min-width: 320px),
+    (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url(../images/contact/plate-mob-2x.webp);
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-size: 113px 99px;
+      background-position: bottom 0px left calc(50% + 129px);
+    }
+
+  }
+
+
+  // tablet screens
+  @media screen and (min-width: 768px) and (max-width: 1279.98px) {
+    background-image: url(../images/header/donuts_group-tab-1x.png), url(../images/contact/plate-tab-1x.png);
+    background-position: top -35px right 117px, bottom 29px left calc(50% + 303px);
+    background-size: 378px, 207px 182px;
+    background-repeat: no-repeat;
+
+    @media screen and (min-width: 768px) and (max-width: 1279.98px),
+    (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url(../images/header/donuts_group-tab-2x.png), url(../images/contact/plate-tab-2x.png);
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1279.98px) {
+      background-image: url(../images/header/donuts_group-tab-1x.webp), url(../images/contact/plate-tab-1x.webp);
+      background-position: top -35px right 117px, bottom 29px left calc(50% + 303px);
+      background-size: 378px, 207px 182px;
+      background-repeat: no-repeat;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1279.98px),
+    (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url(../images/header/donuts_group-tab-2x.webp), url(../images/contact/plate-tab-2x.webp);
+    }
+  }
+
+  //desk
+
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/body/spoon-1.png), url(../images/header/donuts_group-desk-1x.png), url(../images/contact/plate-desk-1x.png);
+    z-index: 20;
+    background-repeat: no-repeat;
+    background-position: left calc(50% - 625px) top 520px, right calc(50% - 300px) top -143px, bottom 75px left calc(50% + 515px);
+    background-size: 250px auto, 831px, 355px 312px;
+
+    @media screen and (min-width: 1280px),
+    (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url(../images/body/spoon-2x.png), url(../images/header/donuts_group-desk-2x.png), url(../images/contact/plate-desk-2x.png);
+      background-repeat: no-repeat;
+      background-position: left calc(50% - 625px) top 520px, right calc(50% - 300px) top -143px, bottom 79px left calc(50% + 515px);
+      background-size: 264px auto, 831px, 355px 312px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      background-image: url(../images/body/spoon-1.webp), url(../images/header/donuts_group-desk-1x.webp), url(../images/contact/plate-desk-1x.webp);
+      z-index: 20;
+      background-repeat: no-repeat;
+      background-position: left calc(50% - 625px) top 520px, right calc(50% - 300px) top -143px, bottom 75px left calc(50% + 515px);
+      background-size: 250px auto, 831px, 355px 312px;
+    }
+
+    @media screen and (min-width: 1280px),
+    (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url(../images/body/spoon-2x.webp), url(../images/header/donuts_group-desk-2x.webp), url(../images/contact/plate-desk-2x.webp);
+      background-repeat: no-repeat;
+      background-position: left calc(50% - 625px) top 520px, right calc(50% - 300px) top -143px, bottom 79px left calc(50% + 515px);
+      background-size: 264px auto, 831px, 355px 312px;
+
+    }
+  }
+}

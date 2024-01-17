@@ -1,0 +1,136 @@
+.reviews {
+  @media screen and (min-width: 768px) {
+    padding-bottom: 0;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 60px;
+  }
+}
+
+.reviews__title {
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 85px;
+  }
+}
+
+.reviews__list {
+  max-width: 320px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    max-width: 704px;
+    min-height: 470px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 1160px;
+    min-height: 560px;
+  }
+}
+
+.reviews__item {
+  font-size: 14px;
+  text-align: center;
+  margin: 0 16px;
+
+  p {
+    font-style: italic;
+  }
+
+  &:nth-child(2) {
+    display: block;
+
+    p {
+      margin-top: 8px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    display: block;
+
+    &:nth-child(3) {
+      margin-right: 0;
+    }
+
+    p {
+      margin-top: 6px;
+      font-size: 14px;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    &:nth-child(3) {
+      margin-right: 0;
+    }
+
+    p {
+      margin-top: 6px;
+      font-size: 16px;
+    }
+  }
+
+  &.item-2 {
+    @media screen and (min-width: 768px) {
+      margin-top: 62px;
+    }
+
+    @media screen and (min-width: 768px) {
+      margin-top: 143px;
+    }
+  }
+}
+
+.reviews__images {
+  box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 50%;
+  margin: auto;
+}
+
+.reviews__content {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.reviews__description {
+  margin-top: 8px;
+  text-align: center;
+  font-size: 16px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 20px;
+  }
+
+  @media screen and (min-width: 1280px) and (min-width: 768px) {
+    font-size: 18px;
+    margin: 0 auto;
+    width: 626px;
+    margin-top: 20px;
+  }
+}
+
+.rate__list {
+  display: flex;
+  list-style-type: none;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  justify-content: center;
+}
+
+.rate__item {
+  margin-right: 4px;
+
+  &:nth-child(5) {
+    margin-right: 0;
+  }
+}
+
+.icon__star {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  fill: var(--btn-color);
+  border-radius: 1px;
+}

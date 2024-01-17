@@ -1,0 +1,296 @@
+.program {
+  background-color: var(--secondary-bg-color);
+
+  &__container-text .subtitle {
+    margin-bottom: 8px;
+
+    @media screen and (min-width: 768px) {
+      text-align: start;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__benefits-list {
+    position: relative;
+  }
+
+  &__benefit {
+    position: relative;
+    display: block;
+    margin-bottom: 8px;
+    align-content: center;
+    align-items: center;
+  }
+
+  &__benefit:last-child {
+    margin-bottom: 0;
+  }
+
+  &__benefit span {
+    display: flex;
+    align-items: center;
+  }
+
+  &__benefit span::before {
+    content: url(../images/svg/donut.svg);
+    height: 16px;
+    margin-right: 7px;
+
+    -webkit-animation: bounce-in-fwd 1.1s both;
+    animation: bounce-in-fwd 1.1s both;
+  }
+  &__text-top {
+    margin-bottom: 8px;
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 20px;
+    }
+  }
+  &__text-desktop {
+    display: none;
+    font-size: 16px;
+    line-height: 1.25;
+    margin-top: 20px;
+
+    @media screen and (min-width: 1280px) {
+      display: block;
+      font-size: 18px;
+      line-height: 1.22;
+    }
+  }
+
+  .program-container {
+    justify-content: center;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      gap: 32px;
+      justify-content: center;
+    }
+
+    @media screen and (min-width: 1280px) {
+      gap: 132px;
+    }
+  }
+
+  &__container-text {
+    font-size: 16px;
+    line-height: 1.25;
+    margin-bottom: 50px;
+
+    @media screen and (min-width: 768px) {
+      width: 605px;
+      margin-bottom: 0;
+    }
+
+    @media screen and (min-width: 1280px) {
+      width: 400px;
+      font-size: 18px;
+      line-height: 1.25;
+    }
+  }
+
+  &__container-img {
+    @media screen and (min-width: 768px) {
+      margin-top: 40px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      display: flex;
+      width: 500px;
+      justify-content: space-between;
+      margin-top: 40px;
+    }
+  }
+
+  &__orders-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px 20px;
+    justify-content: center;
+
+    @media screen and (min-width: 768px) {
+      justify-content: space-around;
+    }
+
+    @media screen and (min-width: 1280px) {
+      justify-content: space-between;
+    }
+  }
+}
+
+.program {
+  &__order {
+    flex-basis: calc(50% - 60px);
+    display: flex;
+    justify-content: center;
+
+    @media screen and (min-width: 768px) {
+      flex-basis: calc(50% - 10px);
+      justify-content: space-between;
+    }
+
+    @media screen and (min-width: 1280px) {
+      flex-basis: calc(50% - 50px);
+    }
+  }
+
+  &__order:nth-child(2n) {
+    margin-top: 55px;
+  }
+
+  &__order-point {
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+
+    background-color: var(--menu-bg-color);
+    box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25);
+
+    @media screen and (min-width: 768px) {
+      width: 152px;
+      height: 152px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      width: 180px;
+      height: 180px;
+    }
+  }
+
+  &__order-img {
+    width: 77px;
+    height: 80px;
+    display: block;
+    position: absolute;
+    top: -40px;
+    left: 25px;
+
+    @media screen and (min-width: 768px) {
+      width: 82px;
+      height: 90px;
+      top: -40px;
+      left: 35px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      width: 97px;
+      height: 107px;
+      top: -50px;
+      left: 40px;
+    }
+    -webkit-animation: bounce-in-fwd 1.1s both;
+    animation: bounce-in-fwd 1.1s both;
+  }
+
+  &__order-title {
+    margin-top: 30px;
+
+    font-family: 'Caveat Brush';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.28;
+
+    color: var(--black-text-color);
+
+    @media screen and (min-width: 768px) {
+      margin-top: 45px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      font-size: 24px;
+      line-height: 1.25;
+    }
+
+    -webkit-animation: bounce-left 0.8s both;
+    animation: bounce-left 0.8s both;
+  }
+
+  &__order-text {
+    margin-top: 4px;
+    margin-bottom: 8px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.21;
+
+    color: var(--black-text-color);
+
+    @media screen and (min-width: 768px) {
+      margin-top: 14px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-top: 16px;
+
+      font-size: 16px;
+      line-height: 1.25;
+    }
+    -webkit-animation: bounce-right 0.8s both;
+    animation: bounce-right 0.8s both;
+  }
+
+  &__order-icon {
+    fill: var(--svg-color);
+
+    @media screen and (min-width: 768px) {
+      width: 21px;
+      height: 21px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      width: 25px;
+      height: 25px;
+    }
+
+    -webkit-animation: bounce-in-fwd 1.1s both;
+    animation: bounce-in-fwd 1.1s both;
+  }
+
+  &__btn-less {
+    padding: 0;
+    display: block;
+    background-color: transparent;
+    border: none;
+    margin-top: 16px;
+    justify-content: start;
+    cursor: pointer;
+
+    @media screen and (min-width: 1280px) {
+      display: none;
+    }
+  }
+
+  &__less {
+    font-family: 'Caveat Brush';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.28;
+    color: var(--btn-color);
+  }
+
+  &__more {
+    margin-top: 16px;
+    font-family: 'Caveat Brush';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.28;
+    color: var(--btn-color);
+
+    @media screen and (min-width: 1280px) {
+    }
+  }
+}
+
+.is-hidden {
+  display: none;
+}
+
+

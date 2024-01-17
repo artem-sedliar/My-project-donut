@@ -1,0 +1,22 @@
+// utils
+@import './utils/vars';
+
+// base
+@import './base/base';
+@import './base/common';
+@import './base/background';
+
+// components
+@import './components/social-links';
+@import './components/slick-slider';
+
+// section
+@import './section/header';
+@import './section/aboutus';
+@import './section/program';
+@import './section/reviews';
+@import './section/speakers';
+@import './section/price';
+@import './section/registration';
+@import './section/contact';
+@import './section/footer';

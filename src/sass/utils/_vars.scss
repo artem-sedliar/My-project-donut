@@ -1,0 +1,36 @@
+:root {
+  // background
+  //  #fef3e4 в Header
+  --primary-bg-color: #fef3e4;
+
+  //  #fffff9 --secondary-bg-color в Speakers
+  --secondary-bg-color: #fffff9;
+
+  //   //rgba(254, 243, 228, 0.9)  в меню випадаючому
+  --menu-bg-color: #fef3e4e6;
+
+  // колір кнопки
+  --btn-color: #ab816c;
+  --hover-btn-color: #876655;
+
+  // колір svg іконок в Program (капелюх кухаря...)
+  --svg-color: #674d40;
+
+  // колір вибраного пункту випадаючого меню
+  --menu-color: #876655;
+
+  // колір Registration фон
+  --registration-bg-color: rgba(171, 129, 108, 0.5);
+
+  // шрифт \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+  --primary-text-color: #2e2520;
+
+  --white-text-color: #ffffff;
+
+  --black-text-color: #000000;
+
+  --placeholder-text-color: #ab816c80;
+
+  --less-more-text-color: rgba(171, 129, 108, 1);
+}

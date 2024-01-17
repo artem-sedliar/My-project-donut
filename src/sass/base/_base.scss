@@ -1,0 +1,204 @@
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+a {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+body {
+  background-color: var(--secondary-bg-color);
+  color: var(--primary-text-color);
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: normal;
+
+  &.no-scroll {
+    overflow: hidden;
+  }
+
+  // гора
+
+  @media screen and (max-width: 768px) {
+    background-image: url(../images/body/bg-mob1.png), url(../images/body/bg-mob-botton1.png);
+    background-repeat: no-repeat;
+    background-position: top 0 right 0, bottom 250px right 0;
+    background-size: 100% 460px, 100% 1230px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url(../images/body/bg-mob2x.png), url(../images/body/bg-mob-bottom2x.png);
+      background-repeat: no-repeat;
+      background-position: top 0 right 0, bottom 250px right 0;
+      background-size: 100% 460px, 100% 1230px;
+    }
+
+    @media screen and (max-width: 768px) {
+      background-image: url(../images/body/bg-mob1.webp), url(../images/body/bg-mob-botton1.webp);
+      background-repeat: no-repeat;
+      background-position: top 0 right 0, bottom 250px right 0;
+      background-size: 100% 460px, 100% 1230px;
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url(../images/body/bg-mob2x.webp), url(../images/body/bg-mob-bottom2x.webp);
+      background-repeat: no-repeat;
+      background-position: top 0 right 0, bottom 250px right 0;
+      background-size: 100% 460px, 100% 1230px;
+    }
+  }
+
+  // tablet
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/body/bg-tablet1.png), url(../images/body/bg-tabler-bottom1.png);
+    background-repeat: no-repeat;
+    background-position: top 0 right 0, bottom 95px right 0;
+    background-size: 100% 622px, 100% 1470px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url(../images/body/bg-tablet2x.png), url(../images/body/bg-tabler-bottom2x.png);
+      background-repeat: no-repeat;
+      background-position: top 0 right 0, bottom 95px right 0;
+      background-size: 100% 622px, 100% 1470px;
+    }
+
+    @media screen and (min-width: 768px) {
+      background-image: url(../images/body/bg-tablet1.webp), url(../images/body/bg-tabler-bottom1.webp);
+      background-repeat: no-repeat;
+      background-position: top 0 right 0, bottom 95px right 0;
+      background-size: 100% 622px, 100% 1470px;
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url(../images/body/bg-tablet2x.webp), url(../images/body/bg-tabler-bottom2x.webp);
+      background-repeat: no-repeat;
+      background-position: top 0 right 0, bottom 95px right 0;
+      background-size: 100% 622px, 100% 1470px;
+    }
+  }
+
+  // desk
+
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/body/bg-desk1.png), url(../images/body/bg-desk-bottom1.png);
+    background-repeat: no-repeat;
+    background-position: top 0 right 0, bottom;
+    background-size: 100% 1035px, 100% 2040px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url(../images/body/bg-desk2x.png), url(../images/body/bg-desk-bottom2x.png);
+      background-repeat: no-repeat;
+      background-position: top 0 right 0, bottom;
+      background-size: 100% 1035px, 100% 2040px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      background-image: url(../images/body/bg-desk1.webp), url(../images/body/bg-desk-bottom1.webp);
+      background-repeat: no-repeat;
+      background-position: top 0 right 0, bottom;
+      background-size: 100% 1035px, 100% 2040px;
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url(../images/body/bg-desk2x.webp), url(../images/body/bg-desk-bottom2x.webp);
+      background-repeat: no-repeat;
+      background-position: top 0 right 0, bottom;
+      background-size: 100% 1035px, 100% 2040px;
+    }
+  }
+
+
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.section {
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  @media screen and (min-width: 767.98px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media screen and (min-width: 480px) {
+    max-width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 1280px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.subtitle {
+  font-family: 'Caveat Brush';
+  font-size: 24px;
+  line-height: calc(30 / 24);
+  text-align: center;
+  color: var(--primary-text-color);
+  font-weight: 400;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 36px;
+  }
+}

@@ -1,0 +1,271 @@
+.price-section {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+
+.price__title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: calc(30 / 24);
+    text-align: center;
+
+    margin-bottom: 16px;
+}
+
+
+.price__card {
+    background-color: var(--primary-bg-color);
+    border-radius: 40px;
+
+    background-image: url(../images/svg/prise/prise-mob-drops.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+
+    padding-bottom: 20px;
+}
+@media screen and (max-width: 767.98px) {
+    .section.price__card--margin:not(:last-child) {
+        margin-bottom: 16px;
+    }
+    .price__card {
+        &:not(:last-child) {
+            margin-bottom: 12px;
+        }
+    }
+}
+
+.price__title-card {
+    font-style: italic;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: calc(22 / 18);
+    text-align: center;
+
+    padding-top: 20px;
+    padding-bottom: 16px;
+    padding-left: 13px;
+    padding-right: 13px;
+}
+
+.price__item {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: calc(22 / 18);
+    margin-left: 20px;
+    margin-right: 20px;
+
+    &:not(:last-child) {
+        margin-bottom: 12px;
+    }
+
+    &:last-child {
+        margin-bottom: 32px;
+    }
+}
+
+.price_btn {
+    display: block;
+    background-color: var(--btn-color);
+    color: var(--white-text-color);
+
+    width: 145px;
+    min-width: 120px;
+    min-height: 40px;
+    padding: 8px 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-family: "Caveat Brush";
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: calc(23 / 18);
+    border: none;
+    border-radius: 25px;
+    &:hover,
+    &:focus {
+        background-color: #876655;
+        border-color: #876655;
+        box-shadow: 0 10px 12px #7a797933, 0 17px 50px #8c878730;
+    }
+    @media screen and (min-width: 1280px) {
+        font-size: 24px;
+        line-height: calc(24 / 18);
+    }
+}
+@media screen and (min-width: 768px) {
+    .price-section {
+        padding-bottom: 40px;
+    }
+    .price__title {
+        font-size: 24px;
+        line-height: calc(30 / 24);
+        margin-bottom: 40px;
+    }
+    .price__grid {
+        display: flex;
+        gap: 15px;
+    }
+    .price__card {
+        display: flex;
+        flex-direction: column;
+        flex-basis: calc((100% - 30px) / 3);
+
+        background-image: url(../images/svg/prise/prise-tab-drops.svg);
+    }
+
+    .price__title-card {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: calc(22 / 18);
+    }
+    .price__item {
+        font-size: 16px;
+        line-height: calc(20 / 16);
+    }
+    .price_btn {
+        margin-top: auto;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .price-section {
+        padding-top: 40px;
+    }
+    .price__title {
+        font-size: 36px;
+        line-height: calc(45 / 36);
+    }
+    .price__grid {
+        gap: 32px;
+    }
+    .price__card {
+        padding-bottom: 40px;
+        flex-basis: calc((100% - 64px) / 3);
+
+        &:nth-child(3) {
+            background-image: url(../images/svg/prise/prise-des-drops.svg),
+                url(../images/svg/prise/prise-des-bagel-left.webp), url(../images/svg/prise/prise-des-bagel-right.webp);
+            background-size: 100%, 66px 74px, 66px 74px;
+            background-position: top, 44px 537px, 329px 464px;
+
+            @media (min-device-pixel-ratio: 2),
+                (-webkit-min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                background-image: url(../images/svg/prise/prise-des-drops.svg),
+                    url(../images/svg/prise/prise-des-bagel-left-@2x.webp),
+                    url(../images/svg/prise/prise-des-bagel-right-@2x.webp);
+                background-size: 100%, 66px 74px, 66px 74px;
+                background-position: top, 44px 537px, 329px 464px;
+            }
+            background-image: url(../images/svg/prise/prise-des-drops.svg),
+                url(../images/svg/prise/prise-des-bagel-left.png), url(../images/svg/prise/prise-des-bagel-right.png);
+            background-size: 100%, 66px 74px, 66px 74px;
+            background-position: top, 44px 537px, 329px 464px;
+
+            @media (min-device-pixel-ratio: 2),
+                (-webkit-min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                background-image: url(../images/svg/prise/prise-des-drops.svg),
+                    url(../images/svg/prise/prise-des-bagel-left-@2x.png),
+                    url(../images/svg/prise/prise-des-bagel-right-@2x.png);
+                background-size: 100%, 66px 74px, 66px 74px;
+                background-position: top, 44px 537px, 329px 464px;
+            }
+        }
+
+        &:nth-child(2) {
+            background-image: url(../images/svg/prise/prise-des-drops.svg),
+                url(../images/svg/prise/prise-des-bagel-left.png), url(../images/svg/prise/prise-des-bagel-right.png);
+            background-size: 100%, 66px 74px, 66px 74px;
+            background-position: top, 0px 448px, 327px 366px;
+
+            @media (min-device-pixel-ratio: 2),
+                (-webkit-min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                background-image: url(../images/svg/prise/prise-des-drops.svg),
+                    url(../images/svg/prise/prise-des-bagel-left-@2x.png),
+                    url(../images/svg/prise/prise-des-bagel-right-@2x.png);
+                background-size: 100%, 66px 74px, 66px 74px;
+                background-position: top, 0px 448px, 327px 366px;
+            }
+            background-image: url(../images/svg/prise/prise-des-drops.svg),
+                url(../images/svg/prise/prise-des-bagel-left.webp), url(../images/svg/prise/prise-des-bagel-right.webp);
+            background-size: 100%, 66px 74px, 66px 74px;
+            background-position: top, 0px 448px, 327px 366px;
+
+            @media (min-device-pixel-ratio: 2),
+                (-webkit-min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                background-image: url(../images/svg/prise/prise-des-drops.svg),
+                    url(../images/svg/prise/prise-des-bagel-left-@2x.webp),
+                    url(../images/svg/prise/prise-des-bagel-right-@2x.webp);
+                background-size: 100%, 66px 74px, 66px 74px;
+                background-position: top, 0px 448px, 327px 366px;
+            }
+        }
+        &:nth-child(1) {
+            background-image: url(../images/svg/prise/prise-des-drops.svg),
+                url(../images/svg/prise/prise-des-bagel-right.webp), url(../images/svg/prise/prise-des-bagel-left.webp),
+                url(../images/svg/prise/prise-des-bagel-ceanter.webp);
+            background-size: 100%, 66px 74px, 66px 74px, 66px 73px;
+            background-position: top, 0px 403px, 305px 257px, 224px 401px;
+
+            @media (min-device-pixel-ratio: 2),
+                (-webkit-min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                background-image: url(../images/svg/prise/prise-des-drops.svg),
+                    url(../images/svg/prise/prise-des-bagel-left-@2x.webp),
+                    url(../images/svg/prise/prise-des-bagel-right-@2x.webp),
+                    url(../images/svg/prise/prise-des-bagel-ceanter-@2x.webp);
+                background-size: 100%, 66px 74px, 66px 74px, 66px 73px;
+                background-position: top, 0px 403px, 305px 257px, 224px 401px;
+            }
+            background-image: url(../images/svg/prise/prise-des-drops.svg),
+                url(../images/svg/prise/prise-des-bagel-right.png), url(../images/svg/prise/prise-des-bagel-left.png),
+                url(../images/svg/prise/prise-des-bagel-ceanter.png);
+            background-size: 100%, 66px 74px, 66px 74px, 66px 73px;
+            background-position: top, 0px 403px, 305px 257px, 224px 401px;
+
+            @media (min-device-pixel-ratio: 2),
+                (-webkit-min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                background-image: url(../images/svg/prise/prise-des-drops.svg),
+                    url(../images/svg/prise/prise-des-bagel-left-@2x.png),
+                    url(../images/svg/prise/prise-des-bagel-right-@2x.png),
+                    url(../images/svg/prise/prise-des-bagel-ceanter-@2x.png);
+                background-size: 100%, 66px 74px, 66px 74px, 66px 73px;
+                background-position: top, 0px 403px, 305px 257px, 224px 401px;
+            }
+        }
+    }
+
+    .price__title-card {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: calc(24 / 20);
+
+        padding-top: 28px;
+        padding-bottom: 40px;
+    }
+    .price__item {
+        font-size: 18px;
+        line-height: calc(22 / 18);
+        &:not(:last-child) {
+            margin-bottom: 16px;
+        }
+
+        &:last-child {
+            margin-bottom: 40px;
+        }
+    }
+}

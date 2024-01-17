@@ -1,0 +1,74 @@
+.slick-slide {
+  width: 274px;
+
+  @media screen and (min-width: 768px) {
+    width: 150px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 274px;
+  }
+}
+
+.reviews__list {
+  .slick-slide {
+    width: 280px;
+
+    transition: transform 300ms ease-in, margin-top 300ms ease-in;
+    transform-origin: top center;
+
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+      width: 152px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      width: 400px;
+      transform: scale(0.7);
+    }
+
+    &.slick-current.slick-active {
+      @media screen and (min-width: 768px) and (max-width: 1279px) {
+        margin-top: 65px;
+        width: 336px;
+      }
+
+      @media screen and (min-width: 1280px) {
+        transform: scale(1);
+        margin-top: 85px;
+      }
+    }
+  }
+}
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 32px;
+
+  &::after,
+  &::before {
+    content: '';
+    width: 35px;
+    height: 1px;
+    background-color: var(--btn-color);
+  }
+}
+
+.slick-dots > li > button {
+  background-color: transparent;
+  border: none;
+  line-height: calc(20 / 16);
+  color: #ab816c;
+
+  &::after {
+    content: '/6';
+  }
+}
+.slick-dots > li {
+  display: none;
+
+  &.slick-active {
+    display: contents;
+  }
+}

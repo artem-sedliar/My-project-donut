@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png" />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
+    <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="description" content="OH MY DONUT" />
+    <title>Oh My Donut</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Montserrat:ital,wght@0,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./sass/index.scss" />
+    <script type="module" src="./index.js"></script>
+  </head>
+  <body>
+    <div class="bg-top bg-bottom">
+      <include src="./partials/header.html"></include>
+      <main>
+        <include src="./partials/menu.html"></include>
+        <include src="./partials/aboutus.html"></include>
+        <include src="./partials/program.html"></include>
+        <include src="./partials/speakers.html"></include>
+        <include src="./partials/price.html"></include>
+        <include src="./partials/reviews.html"></include>
+        <include src="./partials/registration.html"></include>
+        <include src="./partials/contact.html"></include>
+      </main>
+      <include src="./partials/footer.html"></include>
+    </div>
+    <button class="btn-up" type="button" aria-label="To-Top">
+      <span class="btn-up__icon"></span>
+    </button>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  </body>
+</html>

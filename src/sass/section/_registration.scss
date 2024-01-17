@@ -1,0 +1,268 @@
+.registration {
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    background-image: url(../images/registration/donut-tab-1x.png),
+      url(../images/registration/confetti-tab-1x.png);
+    background-position: 0 0, bottom -67px right -5px;
+    background-repeat: no-repeat;
+    background-size: 200px, 260px;
+    margin: 0 auto;
+    padding: 78px 0;
+    position: relative;
+
+    @media not all,
+      screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
+      screen and (min-width: 768px) and (min-resolution: 192dpi),
+      screen and (min-width: 768px) and (min-resolution: 2dppx) {
+      background-image: url(../images/registration/donut-tab-2x.png),
+        url(../images/registration/confetti-tab-2x.png);
+    }
+
+    @media screen and (min-width: 1280px) {
+      max-width: 1280px;
+      background-image: url(../images/registration/donut-desk-1x.png),
+        url(../images/registration/confetti-desk-1x.png);
+      background-position: 7% 9%, bottom -98px right 15px;
+      background-size: 255px, 520px;
+      padding-bottom: 160px;
+      @media not all,
+        screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2),
+        screen and (min-width: 1280px) and (min-resolution: 192dpi),
+        screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+        background-image: url(../images/registration/donut-desk-2x.png),
+          url(../images/registration/confetti-desk-2x.png);
+      }
+    }
+  }
+}
+
+.registration__border {
+  text-align: center;
+  width: 280px;
+  background: var(--secondary-bg-color);
+  border-radius: 150px 150px 0 0;
+  align-items: center;
+  margin: 0 auto;
+  padding: 32px 8px;
+  box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
+
+  @media screen and (min-width: 768px) {
+    width: 704px;
+    border-radius: 150px;
+    padding: 40px 60px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 822px;
+    padding: 40px 106px;
+  }
+}
+
+.registration__wrap {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 1280px) {
+    justify-content: normal;
+  }
+}
+
+.registration__title {
+  margin-bottom: 20px;
+  line-height: calc(30 / 24);
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    left: 50%;
+    top: 45;
+    transform: translate(-50%, -50%);
+    margin: 0;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 36px;
+    top: 35;
+  }
+}
+
+.registration__date {
+  font-size: 18px;
+  line-height: calc(22 / 18);
+  margin-right: auto;
+  margin-left: auto;
+  height: auto;
+
+  @media screen and (min-width: 768px) {
+    margin: 0;
+  }
+}
+
+.registration__form {
+  @media screen and (min-width: 768px) {
+    text-align: left;
+    margin-left: 56px;
+  }
+}
+
+.registration__description {
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    width: 283px;
+    margin-bottom: 16px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 28px;
+  }
+}
+
+.registration__info {
+  margin-bottom: 32px;
+
+  @media screen and (min-width: 768px) {
+    width: 90px;
+    margin: 0;
+    text-align: right;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 127px;
+  }
+}
+
+.registration__info::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1;
+  background-color: var(--registration-bg-color);
+  margin-bottom: 8px;
+
+  @media screen and (min-width: 768px) {
+    transform: translateX(42px) translateY(-33px) rotate(90deg);
+    width: 152px;
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 164px;
+    transform: translateX(70px) translateY(-22px) rotate(90deg);
+  }
+}
+
+.form {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+.form ul {
+  @media screen and (max-width: 768px) {
+    margin-bottom: 32px;
+  }
+}
+
+.form__item {
+  position: relative;
+}
+.form__item:not(:last-child) {
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 18px;
+  }
+}
+
+.form__item:last-child {
+  @media screen and (min-width: 768px) {
+    margin: 0;
+  }
+}
+
+.form__input {
+  background-color: transparent;
+  width: 237px;
+  height: 20px;
+  outline: none;
+  border: 1px solid transparent;
+  border-bottom: 1px solid var(--btn-color);
+
+  &:hover,
+  &:focus {
+    border-radius: 5px;
+    border: 1px solid var(--btn-color);
+    border-radius: 5px;
+  }
+}
+
+.form__input::placeholder {
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  color: var(--registration-bg-color);
+}
+
+.form__input:not(:placeholder-shown):required:invalid {
+  border-color: red;
+  background-color: #fbd8d8;
+}
+
+.form__button {
+  height: 40px;
+  font-family: 'Caveat Brush';
+  color: var(--white-text-color);
+  background-color: var(--btn-color);
+  padding: 8px 46px;
+  border: 1px solid var(--btn-color);
+  cursor: pointer;
+  border-radius: 25px;
+  font-size: 18px;
+  line-height: calc(23 / 18);
+
+  @media screen and (min-width: 768px) {
+    margin-left: 54px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 24px;
+    height: 45px;
+    margin-left: 27px;
+    display: flex;
+    align-items: center;
+  }
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form__button:hover {
+  background-color: #876655;
+  box-shadow: 0 10px 12px 0 rgba(122, 121, 121, 0.2), 0 17px 50px 0 rgba(140, 135, 135, 0.19);
+  border-color: #876655;
+}
+
+.form__input-helper {
+  position: absolute;
+  left: 5;
+  top: 110%;
+  opacity: 0;
+  color: var(--svg-color);
+  font-size: 10px;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (max-width: 768px) {
+    left: 20;
+  }
+  @media screen and (min-width: 768px) {
+    top: 100%;
+    left: 5px;
+  }
+  @media screen and (min-width: 1280px) {
+    top: 100%;
+  }
+}
+.form__item:focus-within .form__input-helper {
+  opacity: 1;
+}
